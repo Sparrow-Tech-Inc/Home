@@ -286,14 +286,14 @@
         
         ::-webkit-scrollbar-thumb:hover {
             background: #555;
-        }
+        } **********/
         
         .highlight-box {
             border-left: 4px solid var(--accent-color);
             background-color: rgba(255, 216, 20, 0.1);
             padding: 15px;
             border-radius: 0 8px 8px 0;
-            margin: 20px 0; ******/
+            margin: 20px 0;
         }
 /********************* 🔄 Loader Overlay *******************************/
     #loader-overlay {
