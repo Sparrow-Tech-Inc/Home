@@ -1,0 +1,296 @@
+
+        :root {
+            --primary-color: #6c5ce7;
+            --secondary-color: #a29bfe;
+            --accent-color: #fd79a8;
+            --dark-color: #102E50;
+            --light-color: #f5f6fa;
+            --success-color: #00b894;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary-color: #A4B465;
+                --secondary-color: #FAD59A;
+                --accent-color: #8E7DBE;
+                --dark-color: #102E50;
+                --light-color: #f5f6fa;
+                --success-color: #89AC46;
+            }
+        }
+    /********************************************/
+        html {
+            font-size: 14px;
+            scroll-behavior: smooth;
+            scroll-padding: 56px;
+            font-family: "Open Sans", system-ui;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            user-select: none;
+            font-family: "Open Sans", system-ui;
+        }
+        body {
+            font-family: "Open Sans", system-ui;
+            overflow-x: hidden;
+        }
+    /*******************************************/    
+        .navbar-brand img {
+            height: 50px;
+            transition: all 0.3s ease;
+        }
+        
+        .navbar-brand img:hover {
+            transform: scale(1.1);
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 5rem 0;
+            position: relative;
+            overflow: hidden;
+            min-height: 60vh;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            top: -100px;
+            right: -100px;
+        }
+        
+        .hero-section::after {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            bottom: -50px;
+            left: -50px;
+        }
+        
+        .hero-img {
+            /* animation: float 3s ease-in-out infinite; */
+            max-height: 160px;
+            aspect-ratio:  1 / 1;
+            margin: 20px 0px ;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .download-btn {
+            background-color: var(--accent-color);
+            border: none;
+            padding: 12px 30px;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(253, 121, 168, 0.4);
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 10px rgba(253, 121, 168, 0.6);
+            background: #102E50 ;
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .how-to-download {
+            background-color: var(--light-color);
+        }
+        
+    /************ New How-to Download Section Style ************/
+        .steps-container {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 20px;
+            padding: 20px 0;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .step-card {
+            flex: 0 0 300px;
+            scroll-snap-align: start;
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .step-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
+    /************** Screenshot Section with Horizontal Scroll **************/
+        .screenshots-container {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 20px;
+            padding: 20px 0;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .screenshot-card {
+            flex: 0 0 220px;
+            scroll-snap-align: start;
+        }
+        
+        .screenshot-img {
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            max-height: 410px;
+            aspect-ratio: 2 / 3;
+            object-fit: fill;
+        }
+
+    /***********************************************/    
+        .faq-item {
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .faq-header button {
+            font-weight: 600;
+        }
+        
+        /* Enhanced More Apps Section */
+        .more-apps-container {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 30px;
+            padding: 30px 0;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .more-apps-card {
+            flex: 0 0 280px;
+            scroll-snap-align: start;
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            background: white;
+            position: relative;
+        }
+        
+        .more-apps-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+    /*************************************************/    
+        .app-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--accent-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .app-img-container {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #f5f7fa, #e4e8eb);
+        }
+        
+        .app-img {
+            height: 150px;
+            transition: all 0.3s ease;
+        }
+        
+        .more-apps-card:hover .app-img {
+            transform: scale(1.1);
+        }
+        
+        .app-store-badge {
+            height: 50px;
+        }
+   /*******************************************/     
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+        }
+        
+        .social-icon {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            color: var(--accent-color);
+            transform: translateY(-3px);
+        }
+        
+        /**************** Custom scrollbar ****************/
+        ::-webkit-scrollbar {
+            height: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary-color);
+            border-radius: 10px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        
+        .highlight-box {
+            border-left: 4px solid var(--accent-color);
+            background-color: rgba(255, 216, 20, 0.1);
+            padding: 15px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
