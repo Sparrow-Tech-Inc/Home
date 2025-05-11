@@ -229,65 +229,28 @@
             font-weight: 600;
         }
         
-        /* Enhanced More Apps Section */
-        .more-apps-container {
-            display: flex;
-            overflow-x: auto;
-            scroll-snap-type: x mandatory;
-            gap: 30px;
-            padding: 30px 0;
-            -webkit-overflow-scrolling: touch;
-        }
-        
-        .more-apps-card {
-            flex: 0 0 280px;
-            scroll-snap-align: start;
-            border: none;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-            background: white;
-            position: relative;
-        }
-        
-        .more-apps-card:hover {
-            transform: translateY(-10px) scale(1.02);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-        }
+  /************* Enhanced More Apps Section **************/
+        .moreapps h2 {
+           font-weight: bold;
+            color: #40128B;
+            text-align: center;
+            margin-bottom: 2rem;
+      }
+      .app-box {
+           background: #fff;
+           border-radius: 12px;
+           box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+           padding: 1rem;
+           margin-bottom: 1rem;
+       }
+    .app-icon {
+          width: 64px;
+          height: 64px;
+          border-radius: 10px;
+          object-fit: cover;
+       }      
     /*************************************************/    
-        .app-badge {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            background: var(--accent-color);
-            color: white;
-            padding: 5px 10px;
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: bold;
-        }
         
-        .app-img-container {
-            height: 200px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(135deg, #f5f7fa, #e4e8eb);
-        }
-        
-        .app-img {
-            height: 150px;
-            transition: all 0.3s ease;
-        }
-        
-        .more-apps-card:hover .app-img {
-            transform: scale(1.1);
-        }
-        
-        .app-store-badge {
-            height: 50px;
-        }
    /*******************************************/     
         footer {
             background-color: var(--dark-color);
@@ -306,7 +269,7 @@
             transform: translateY(-3px);
         }
         
-        /**************** Custom scrollbar ****************/
+        /**************** Custom scrollbar **************
         ::-webkit-scrollbar {
             height: 10px;
         }
@@ -330,7 +293,7 @@
             background-color: rgba(255, 216, 20, 0.1);
             padding: 15px;
             border-radius: 0 8px 8px 0;
-            margin: 20px 0;
+            margin: 20px 0; ******/
         }
 /********************* 🔄 Loader Overlay *******************************/
     #loader-overlay {
