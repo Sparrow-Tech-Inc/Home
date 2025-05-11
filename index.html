@@ -21,36 +21,36 @@
 </head>
 <body oncontextmenu= "return false">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+    <!-- Fixed Header with Brand Logo -->
+    <header class="fixed-header text-white py-2">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="logo.png" alt="App Logo" class="d-inline-block align-top" draggable="false" loading="lazy">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#features">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#how-to-download">How to Download</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#screenshots">Screenshots</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#faq">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#more-apps">More Apps</a>
-                    </li>
-                </ul>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <img src="logo.png" alt="Brand Logo" class="brand-logo" loading="lazy" draggable="false">
+                    <h3 class="m-0">SparrowTech</h3>
+                </div>
+                <div>
+                    <i class="bi bi-list nav-icon" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav"></i>
+                </div>
             </div>
         </div>
-    </nav>
+    </header>
+
+    <!-- Off-canvas Sidebar Navigation -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNav">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body p-0">
+            <a href="#"><i class="bi bi-house-door me-2"></i>Home</a>
+            <a href="#"><i class="bi bi-info-circle me-2"></i>About Us</a>
+            <a href="#"><i class="bi bi-collection me-2"></i>Services</a>
+            <a href="#"><i class="bi bi-images me-2"></i>Portfolio</a>
+            <a href="#"><i class="bi bi-envelope me-2"></i>Contact</a>
+            <a href="#"><i class="bi bi-question-circle me-2"></i>FAQ</a>
+        </div>
+    </div>
 
     <!-- Hero Section -->
     <section class="hero-section">
