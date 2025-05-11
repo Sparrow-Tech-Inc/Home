@@ -59,7 +59,31 @@
         .fixed-header .bi { font-size:30px; }
 
     /******************************************/    
+        .offcanvas {
+            background-color: var(--dark-color);
+            color: white;
+        }
         
+        .offcanvas a {
+            color: white;
+            padding: 12px 20px;
+            display: block;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            transition: all 0.3s;
+        }
+        
+        .offcanvas a:hover {
+            background-color: rgba(255,255,255,0.1);
+            padding-left: 25px;
+        }
+        
+        .nav-icon {      
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+    /*******************************************/
         .hero-section {
             background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             color: white;
