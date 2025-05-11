@@ -21,11 +21,6 @@
 </head>
 <body oncontextmenu= "return false">
 
-    <!-- 🔄 Loader Overlay -->
-    <div id="loader-overlay">
-       <div class="dual-ring-loader"></div>
-   </div>
-
     <!-- Fixed Header with Brand Logo -->
     <header class="fixed-header text-white py-2">
         <div class="container">
@@ -340,26 +335,5 @@
     <!-- version-check.php File Add Here -->
     <?php include 'version-check.php'; ?>
 
-    <script>
-        // Simple animation trigger on scroll
-        document.addEventListener('DOMContentLoaded', function() {
-            const animateElements = document.querySelectorAll('.animate__animated');
-            
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add(entry.target.dataset.animate);
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, {
-                threshold: 0.1
-            });
-            
-            animateElements.forEach(element => {
-                observer.observe(element);
-            });
-        });
-    </script>
 </body>
 </html>
