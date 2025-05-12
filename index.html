@@ -1,364 +1,356 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no,viewport-fit=cover">
-
-    <title> SparrowTech-Apps 2025 - Download Now </title>
-    <link rel="icon" href="assect/logo.png" type="image/gif" sizes="16x16">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <!--Font Family-->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Download SolveIt - Fun Math Game by SparrowTech to boost your math skills">
     
-    <!-- Custom CSS File -->
-    <link rel="stylesheet" href="style.css">
-
+    <title>SparrowTech | SolveIt - Fun Math Game</title>
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    
+    <!-- Preload resources -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" as="style">
+    
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    
 </head>
-<body oncontextmenu= "return false">
-
-    <!--------------------------------------------------------------
-     -----------------Fixed Header with Brand Logo -----------------
-     --------------------------------------------------------------->
-    <header class="fixed-header text-white py-2">
+<body>
+    <!-- Header -->
+    <header class="fixed-header">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
                 <div class="d-flex align-items-center">
-                    <img src="assect/logo.png" alt="Brand Logo" class="brand-logo" loading="lazy" draggable="false">
-                    <h3 class="m-0"> SparrowTech </h3>
+                    <img src="assets/logo.png" alt="SparrowTech Logo" class="brand-logo" loading="lazy" width="32" height="32">
+                    <h3 class="m-0 text-dark">SparrowTech</h3>
                 </div>
                 <div>
-                    <i class="bi bi-list nav-icon" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav"></i>
+                    <i class="bi bi-list nav-icon" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" aria-label="Menu"></i>
                 </div>
             </div>
         </div>
     </header>
 
-    <!--------------------------------------------------------
-     ------------ Off-canvas Sidebar Navigation --------------
-     --------------------------------------------------------->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNav">
+    <!-- Navigation -->
+    <nav class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title">Menu</h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+            <h5 class="offcanvas-title" id="offcanvasNavLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body p-0">
-            <a href="#"><i class="bi bi-house-door me-2"></i>Home</a>
-            <a href="#"><i class="bi bi-info-circle me-2"></i>About Us</a>
-            <a href="#"><i class="bi bi-collection me-2"></i>Services</a>
-            <a href="#"><i class="bi bi-images me-2"></i>Portfolio</a>
-            <a href="#"><i class="bi bi-envelope me-2"></i>Contact</a>
-            <a href="#"><i class="bi bi-question-circle me-2"></i>FAQ</a>
+            <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item list-group-item-action"><i class="bi bi-house-door me-2"></i>Home</a>
+                <a href="#features" class="list-group-item list-group-item-action"><i class="bi bi-stars me-2"></i>Features</a>
+                <a href="#screenshots" class="list-group-item list-group-item-action"><i class="bi bi-images me-2"></i>Screenshots</a>
+                <a href="#download" class="list-group-item list-group-item-action"><i class="bi bi-download me-2"></i>Download</a>
+                <a href="#faq" class="list-group-item list-group-item-action"><i class="bi bi-question-circle me-2"></i>FAQ</a>
+            </div>
         </div>
-    </div>
+    </nav>
 
-    <!--------------------------------------------------------------------
-     ---------------------------- Hero Section ---------------------------
-     ---------------------------------------------------------------------->
-    <section class="hero-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 order-lg-1 order-2">
-                    <h1 class="display-4 fw-bold mb-4 animate__animated animate__fadeInDown"> SolveIt - Fun Math Game </h1>
-                    <p class="lead mb-4 animate__animated animate__fadeIn animate__delay-1s"> Boost your math skills with SolveIt! A fun and interactive math game covering addition, subtraction, multiplication, and division. </p>
-                    <div class="d-flex gap-3 animate__animated animate__fadeIn animate__delay-2s">
-                        <a href="#download" class="btn download-btn text-white">
-                            <i class="bi bi-download me-2"></i> Download Now
-                        </a>
-                        <a href="#features" class="btn btn-outline-light">
-                            <i class="bi bi-play-circle me-2"></i> Watch Demo
-                        </a>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 order-lg-1 order-2">
+                        <h1 class="display-4 fw-bold mb-4">SolveIt - Fun Math Game</h1>
+                        <p class="lead mb-4">Boost your math skills with SolveIt! A fun and interactive math game covering addition, subtraction, multiplication, and division.</p>
+                        <div class="d-flex gap-3 mb-4">
+                            <a href="#download" class="btn btn-primary">
+                                <i class="bi bi-download me-2"></i> Download Now
+                            </a>
+                            <a href="#features" class="btn btn-outline">
+                                <i class="bi bi-play-circle me-2"></i> Watch Demo
+                            </a>
+                        </div>
+                        <div class="d-flex align-items-center text-white">
+                            <i class="bi bi-patch-check-fill me-2"></i>
+                            <small>Official app available on Amazon Appstore</small>
+                        </div>
                     </div>
-                    <div class="mt-4 highlight-box animate__animated animate__fadeIn animate__delay-3s">
-                        <small class="small">
-                            <i class="bi bi-patch-check-fill me-2" style="color: var(--accent-color);"></i>
-                            Official app available on Amazon Appstore </small>
+                    <div class="col-lg-6 order-lg-2 order-1 text-center">
+                        <img src="assets/solveit.png" alt="SolveIt App Screenshot" class="img-fluid hero-img" loading="eager" width="400" height="800">
                     </div>
                 </div>
-                <div class="col-lg-6 order-lg-2 order-1 text-center animate__animated animate__fadeInRight">
-                    <img src="assect/solveit.png" alt="App Screenshot" class="img-fluid hero-img" draggable="false">
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">Why Choose SolveIt</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 p-4">
+                            <i class="bi bi-speedometer2 feature-icon"></i>
+                            <h3>Fast Learning</h3>
+                            <p>Improve your math skills quickly with our adaptive learning algorithm that adjusts to your level.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 p-4">
+                            <i class="bi bi-trophy feature-icon"></i>
+                            <h3>Challenges</h3>
+                            <p>Compete with friends and climb the leaderboards with daily and weekly challenges.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 p-4">
+                            <i class="bi bi-graph-up feature-icon"></i>
+                            <h3>Progress Tracking</h3>
+                            <p>Detailed analytics help you understand your strengths and areas for improvement.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-------------------------------------------------------------------------------
-     ------------------------------ Security & Ratting Section ----------------------
-     --------------------------------------------------------------------------------->
-    <section class="container my-3 py-4">
-            <div class="row align-items-center">
-
-              <!-- Left Div with image + text -->
-              <div class="col-md-6 mb-4 mb-md-0 text-center">
-                  <img src="secure.webp" width="100" class="img-fluid mb-3" alt="Example Image" loading="lazy" draggable="false">
-                  <h4 class="text-primary">Play & Earn Instantly</h4>
-                  <p>Download the Zupee gaming app to enjoy exciting games like Ludo and Rummy, and win real cash prizes instantly. 100% safe and secure.</p>
-             </div>
-
-             <!-- Right Div with only image -->
-             <div class="col-md-6">
-                <img src="rating.webp" class="img-fluid" alt="Second Image" loading="lazy" draggable="false">
-             </div>
-
-            </div>  
-     </section>
-
-    
-    <!-------------------------------------------------------------------------------
-     ----------- How to Download Section - Now with horizontal scroll cards ---------
-     --------------------------------------------------------------------------------->
-    <section id="how-to-download" class="how-to-download py-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="fw-bold">How to Download</h2>
-                <p class="text-muted">Get started in just a few simple steps</p>
-            </div>
-            
-            <div class="steps-container">
-                <div class="step-card animate__animated animate__fadeInLeft">
-                    <div class="step-number">1</div>
-                    <h4>Visit Amazon Appstore</h4>
-                    <p class="text-muted">Go to the Amazon Appstore on your device or visit the website.</p>
+        <!-- Download Steps -->
+        <section id="download">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">How to Download</h2>
+                <div class="row g-4">
+                    <div class="col-md-3">
+                        <div class="step-card">
+                            <img src="assets/search.png" alt="Search icon" class="step-img">
+                            <div class="step-number">1</div>
+                            <h4>Visit Amazon Appstore</h4>
+                            <p>Go to the Amazon Appstore on your device or visit the website.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="step-card">
+                            <img src="assets/find.png" alt="Find app icon" class="step-img">
+                            <div class="step-number">2</div>
+                            <h4>Search for SolveIt</h4>
+                            <p>Type "SolveIt" in the search bar and find our official app.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="step-card">
+                            <img src="assets/download.png" alt="Download icon" class="step-img">
+                            <div class="step-number">3</div>
+                            <h4>Download & Install</h4>
+                            <p>Click the download button and wait for installation to complete.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="step-card">
+                            <img src="assets/play.png" alt="Play icon" class="step-img">
+                            <div class="step-number">4</div>
+                            <h4>Launch & Enjoy</h4>
+                            <p>Open the app and start improving your math skills.</p>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="step-card animate__animated animate__fadeInLeft animate__delay-1s">
-                    <div class="step-number">2</div>
-                    <h4>Search for Our App</h4>
-                    <p class="text-muted">Type the app name in the search bar and find our official app.</p>
-                </div>
-                
-                <div class="step-card animate__animated animate__fadeInLeft animate__delay-2s">
-                    <div class="step-number">3</div>
-                    <h4>Download & Install</h4>
-                    <p class="text-muted">Click the download button and wait for the installation to complete.</p>
-                </div>
-                
-                <div class="step-card animate__animated animate__fadeInLeft animate__delay-3s">
-                    <div class="step-number">4</div>
-                    <h4>Launch & Enjoy</h4>
-                    <p class="text-muted">Open the app and start exploring all the amazing features.</p>
+                <div class="text-center mt-5">
+                    <a href="#" class="btn btn-primary btn-lg px-5">
+                        <i class="bi bi-download me-2"></i> Download Now
+                    </a>
                 </div>
             </div>
-            
-            <div class="text-center mt-5 animate__animated animate__fadeIn animate__delay-4s">
-                <a href="#download" class="btn btn-primary btn-lg px-5">
-                    <i class="bi bi-download me-2"></i> Download Now
-                </a>
-                <p class="mt-3 text-muted">Official app available on Amazon Appstore</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!----------------------------------------------------------------------------------
-     --------------------- Screenshots Section with Horizontal Scroll ------------------
-     ----------------------------------------------------------------------------------->
-    <section id="screenshots" class="py-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="fw-bold">App Screenshots</h2>
-                <p class="text-muted">See what our app looks like</p>
-            </div>
-            
-            <div class="screenshots-container">
-                <div class="screenshot-card">
-                    <img src="assect/image1.png" alt="Screenshot 1" class="img-fluid screenshot-img animate__animated animate__fadeIn">
-                </div>
-                <div class="screenshot-card">
-                    <img src="assect/image2.png" alt="Screenshot 2" class="img-fluid screenshot-img animate__animated animate__fadeIn animate__delay-1s">
-                </div>
-                <div class="screenshot-card">
-                    <img src="assect/image3.png" alt="Screenshot 3" class="img-fluid screenshot-img animate__animated animate__fadeIn animate__delay-1.5s">
-                </div>
-                <div class="screenshot-card">
-                    <img src="assect/image4.png" alt="Screenshot 4" class="img-fluid screenshot-img animate__animated animate__fadeIn animate__delay-2s">
+        <!-- Screenshots -->
+        <section id="screenshots">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">App Screenshots</h2>
+                <div class="screenshot-container">
+                    <div class="screenshot-card">
+                        <img src="assets/image1.png" alt="SolveIt Gameplay Screenshot 1" class="img-fluid" loading="lazy" width="300" height="600">
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="assets/image2.png" alt="SolveIt Gameplay Screenshot 2" class="img-fluid" loading="lazy" width="300" height="600">
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="assets/image3.png" alt="SolveIt Gameplay Screenshot 3" class="img-fluid" loading="lazy" width="300" height="600">
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="assets/image4.png" alt="SolveIt Gameplay Screenshot 4" class="img-fluid" loading="lazy" width="300" height="600">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!----------------------------------------------------------------------------
-     -------------------------------- FAQ Section --------------------------------
-     ----------------------------------------------------------------------------->
-    <section id="faq" class="py-5 bg-light">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="fw-bold">Frequently Asked Questions</h2>
-                <p class="text-muted">Find answers to common questions</p>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="accordion" id="faqAccordion">
-
-                        <div class="faq-item animate__animated animate__fadeInUp">
-                            <div class="faq-header" id="headingOne">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-                                    Is this app free to download?
-                                </button>
-                            </div>
-                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    Yes, our app is completely free to download from the Amazon Appstore. Some premium features may require in-app purchases.
+        <!-- FAQ -->
+        <section id="faq">
+            <div class="container">
+                <h2 class="section-title text-center mb-5">Frequently Asked Questions</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item mb-3 border-0 shadow-sm">
+                                <h3 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                        Is this app free to download?
+                                    </button>
+                                </h3>
+                                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Yes, SolveIt is completely free to download from the Amazon Appstore. The app offers optional in-app purchases for premium features.
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="faq-item animate__animated animate__fadeInUp animate__delay-1s">
-                            <div class="faq-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-                                    What devices are supported?
-                                </button>
-                            </div>
-                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    Our app supports all Android devices running Android 8.0 and above. It's optimized for both phones and tablets.
+                            <div class="accordion-item mb-3 border-0 shadow-sm">
+                                <h3 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                        What age group is this app for?
+                                    </button>
+                                </h3>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        SolveIt is designed for ages 8 and up. We offer different difficulty levels to accommodate beginners through advanced learners.
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="faq-item animate__animated animate__fadeInUp animate__delay-2s">
-                            <div class="faq-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
-                                    How do I update the app?
-                                </button>
-                            </div>
-                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    Updates are automatically handled through the Amazon Appstore. You can also manually check for updates in the "My Apps" section of the Appstore.
+                            <div class="accordion-item mb-3 border-0 shadow-sm">
+                                <h3 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                        How does SolveIt protect my child's privacy?
+                                    </button>
+                                </h3>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        We are COPPA compliant and do not collect any personally identifiable information from children. All data is stored securely and never shared with third parties.
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="faq-item animate__animated animate__fadeInUp animate__delay-3s">
-                            <div class="faq-header" id="headingFour">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
-                                    Is my data secure?
-                                </button>
-                            </div>
-                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    Absolutely! We use industry-standard encryption to protect your data and we never share your information with third parties without your consent.
+                            <div class="accordion-item mb-3 border-0 shadow-sm">
+                                <h3 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                        Can I use SolveIt without an internet connection?
+                                    </button>
+                                </h3>
+                                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Yes! SolveIt works perfectly offline. An internet connection is only required for initial download, updates, and multiplayer features.
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!---------------------------------------------------------------------------------
-     ----------------------- More Apps Section - Enhanced Design ----------------------
-     ---------------------------------------------------------------------------------->
-    <section class="my-3 py-4 moreapps">
-        <div class="container">
-            <h2> Download Our More Apps </h2>
-
-            <div class="app-box d-flex align-items-center">
-              <img src="https://picsum.photos/64?random=1" alt="App Icon" class="app-icon me-3">
-              <div class="flex-grow-1">
-                <h5 class="mb-1">Zupee Quiz Master</h5>
-                <p class="mb-0 text-muted">Test your knowledge & win exciting rewards.</p>
-              </div>
-              <a href="#" class="btn btn-warning">Download</a>
-            </div>
-
-            <div class="app-box d-flex align-items-center">
-               <img src="https://picsum.photos/64?random=2" alt="App Icon" class="app-icon me-3">
-               <div class="flex-grow-1">
-                 <h5 class="mb-1">Zupee Rummy Stars</h5>
-                 <p class="mb-0 text-muted">Play Rummy with real players & earn cash.</p>
-               </div>
-               <a href="#" class="btn btn-warning">Download</a>
-             </div>
-
-             <div class="app-box d-flex align-items-center">
-               <img src="https://picsum.photos/64?random=3" alt="App Icon" class="app-icon me-3">
-               <div class="flex-grow-1">
-                 <h5 class="mb-1">Zupee Ludo Legends</h5>
-                 <p class="mb-0 text-muted">Classic Ludo with real cash tournaments.</p>
-               </div>
-               <a href="#" class="btn btn-warning">Download</a>
-             </div>
-        </div>    
-    </section>
-
-    <!----------------------------------------------------------------
-     --------------------------Footer Section ------------------------
-     ----------------------------------------------------------------->
-    <footer class="py-5">
+    <!-- Footer -->
+    <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <p>Enhancing productivity through innovative solutions since 2025.</p>
-                    <div class="mt-3">
-                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                <div class="col-lg-4 mb-4">
+                    <img src="assets/logo.png" alt="SparrowTech Logo" width="40" height="40" class="mb-3">
+                    <p class="mb-4">Enhancing learning through innovative solutions since 2025.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
-                    <h5>Support</h5>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5>Product</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
-                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
-                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Terms of Service</a></li>
-                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Help Center</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Features</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Pricing</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Updates</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">About</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Careers</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Blog</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-md-4">
-                    <h5>Download</h5>
+                    <h5>Get the App</h5>
                     <p>Available on Amazon Appstore</p>
+                    <img src="assets/amazon-appstore-badge.png" alt="Available on Amazon Appstore" width="150" class="mt-2">
                 </div>
             </div>
             <hr class="my-4 bg-secondary">
             <div class="text-center">
-                <p class="mb-0">&copy; 2025 SparrowTech-Apps. All rights reserved.</p>
+                <p class="mb-0">&copy; 2025 SparrowTech. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle">
+        <i class="bi bi-moon-fill" id="themeIcon"></i>
+    </button>
 
-    <!--------------------------------------------------------
-    ------------------- 🔄 Loader Overlay -------------------
-    ---------------------------------------------------------->
+    <!-- Loader -->
     <div id="loader-overlay">
-       <div class="dual-ring-loader"></div>
-   </div>
+        <div class="dual-ring-loader"></div>
+    </div>
 
-    
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
-    <!-- version-check.php File Add Here -->
+    <!-- Version Check Script -->
     <script>
-    const versionKey = 'html_version';
+    document.addEventListener('DOMContentLoaded', function() {
+        const versionKey = 'html_version';
+        const loader = document.getElementById('loader-overlay');
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const html = document.documentElement;
 
-fetch('version.txt?t=' + new Date().getTime())
-  .then(res => res.text())
-  .then(serverVersion => {
-    const newVersion = serverVersion.trim();
-    const savedVersion = localStorage.getItem(versionKey);
+        // Theme toggle functionality
+        themeToggle.addEventListener('click', function() {
+            if (html.getAttribute('data-bs-theme') === 'dark') {
+                html.setAttribute('data-bs-theme', 'light');
+                themeIcon.className = 'bi bi-moon-fill';
+                localStorage.setItem('theme', 'light');
+            } else {
+                html.setAttribute('data-bs-theme', 'dark');
+                themeIcon.className = 'bi bi-sun-fill';
+                localStorage.setItem('theme', 'dark');
+            }
+        });
 
-    if (savedVersion !== newVersion) {
-      localStorage.setItem(versionKey, newVersion);
-      location.reload(true); // 🔄 Reload with cache bypass
-    } else {
-      // 🟢 Hide loader if version is same
-      const loader = document.getElementById('loader-overlay');
-      if (loader) loader.style.display = 'none';
-    }
-  })
-  .catch(err => {
-    console.error("Version check failed:", err);
-    // Still hide loader even on error
-    const loader = document.getElementById('loader-overlay');
-    if (loader) loader.style.display = 'none';
-  });
+        // Check for saved theme preference
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        html.setAttribute('data-bs-theme', savedTheme);
+        themeIcon.className = savedTheme === 'dark' ? 'bi bi-sun-fill' : 'bi bi-moon-fill';
 
-  </script>
+        // Version check
+        fetch('version.txt?t=' + new Date().getTime())
+            .then(res => {
+                if (!res.ok) throw new Error('Network response was not ok');
+                return res.text();
+            })
+            .then(serverVersion => {
+                const newVersion = serverVersion.trim();
+                const savedVersion = localStorage.getItem(versionKey);
 
+                if (savedVersion !== newVersion) {
+                    localStorage.setItem(versionKey, newVersion);
+                    location.reload(true);
+                } else if (loader) {
+                    loader.style.opacity = '0';
+                    setTimeout(() => {
+                        loader.style.display = 'none';
+                    }, 500);
+                }
+            })
+            .catch(err => {
+                console.error("Version check failed:", err);
+                if (loader) {
+                    loader.style.opacity = '0';
+                    setTimeout(() => {
+                        loader.style.display = 'none';
+                    }, 500);
+                }
+            });
+    });
+    </script>
 </body>
 </html>
