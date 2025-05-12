@@ -1,24 +1,57 @@
 
-const versionKey = 'html_version';
+    document.addEventListener('DOMContentLoaded', function() {
+        const versionKey = 'html_version';
+        const loader = document.getElementById('loader-overlay');
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const html = document.documentElement;
 
-fetch('version.txt?t=' + new Date().getTime())
-  .then(res => res.text())
-  .then(serverVersion => {
-    const newVersion = serverVersion.trim();
-    const savedVersion = localStorage.getItem(versionKey);
+        // Theme toggle functionality
+        themeToggle.addEventListener('click', function() {
+            if (html.getAttribute('data-bs-theme') === 'dark') {
+                html.setAttribute('data-bs-theme', 'light');
+                themeIcon.className = 'bi bi-moon-fill';
+                localStorage.setItem('theme', 'light');
+            } else {
+                html.setAttribute('data-bs-theme', 'dark');
+                themeIcon.className = 'bi bi-sun-fill';
+                localStorage.setItem('theme', 'dark');
+            }
+        });
 
-    if (savedVersion !== newVersion) {
-      localStorage.setItem(versionKey, newVersion);
-      location.reload(true); // 🔄 Reload with cache bypass
-    } else {
-      // 🟢 Hide loader if version is same
-      const loader = document.getElementById('loader-overlay');
-      if (loader) loader.style.display = 'none';
-    }
-  })
-  .catch(err => {
-    console.error("Version check failed:", err);
-    // Still hide loader even on error
-    const loader = document.getElementById('loader-overlay');
-    if (loader) loader.style.display = 'none';
-  });
+        // Check for saved theme preference
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        html.setAttribute('data-bs-theme', savedTheme);
+        themeIcon.className = savedTheme === 'dark' ? 'bi bi-sun-fill' : 'bi bi-moon-fill';
+
+        // Version check
+        fetch('version.txt?t=' + new Date().getTime())
+            .then(res => {
+                if (!res.ok) throw new Error('Network response was not ok');
+                return res.text();
+            })
+            .then(serverVersion => {
+                const newVersion = serverVersion.trim();
+                const savedVersion = localStorage.getItem(versionKey);
+
+                if (savedVersion !== newVersion) {
+                    localStorage.setItem(versionKey, newVersion);
+                    location.reload(true);
+                } else if (loader) {
+                    loader.style.opacity = '0';
+                    setTimeout(() => {
+                        loader.style.display = 'none';
+                    }, 500);
+                }
+            })
+            .catch(err => {
+                console.error("Version check failed:", err);
+                if (loader) {
+                    loader.style.opacity = '0';
+                    setTimeout(() => {
+                        loader.style.display = 'none';
+                    }, 500);
+                }
+            });
+    });
+    
