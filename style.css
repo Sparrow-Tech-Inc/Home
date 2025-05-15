@@ -13,6 +13,9 @@
             --dark: #212529;
             --gray: #6c757d;
             --success: #77dd77;
+
+            --list-item-bg: #f9e6ff;
+            --list-item-hover-bg: #efccff;
         }
 
         [data-bs-theme="dark"] {
@@ -88,16 +91,26 @@
              min-height: 50vh;
         }
        .list-group-item {
-             margin: 0.5rem 1rem;
-             padding: 1rem;
-             background-color: #f1f1f1;
-             border-radius: 10px;
-             transition: background-color 0.3s;
-       }
+            border: none;
+            padding: 15px;
+            font-size: 1rem;
+            background: var(--list-item-bg);
+            margin-bottom: 10px;
+            border-radius: 10px;
+            transition: background 0.3s ease;
+        }
 
-      .list-group-item:hover {
-             background-color: #e2e6ea;
-      }
+        .list-group-item a {
+            text-decoration: none;
+            color: var(--text-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .list-group-item:hover {
+            background-color: var(--list-item-hover-bg);
+        }
 /****************** Hero Section *********************/
         .hero {
             padding: 8rem 0 4rem;
