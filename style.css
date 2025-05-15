@@ -99,15 +99,6 @@
             border-radius: 10px;
             transition: background 0.3s ease;
         }
-
-        .list-group-item a {
-            text-decoration: none;
-            color: var(--text-color);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
         .list-group-item:hover {
             background-color: var(--list-item-hover-bg);
         }
