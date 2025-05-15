@@ -81,7 +81,22 @@
             color: var(--primary);
             cursor: pointer;
         }
-        
+ /****************** Off Canvas ***********************/
+        .offcanvas-bottom {
+             height: auto;
+             min-height: 50vh;
+        }
+      .offcanvas .list-group-item {
+             margin: 0.5rem 1rem;
+             padding: 1rem;
+             background-color: #f1f1f1;
+             border-radius: 10px;
+             transition: background-color 0.3s;
+       }
+
+      .list-group-item:hover {
+             background-color: #e2e6ea;
+      }
 /****************** Hero Section *********************/
         .hero {
             padding: 8rem 0 4rem;
