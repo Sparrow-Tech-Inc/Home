@@ -95,7 +95,7 @@
             padding: 15px;
             font-size: 1rem;
             background: var(--list-item-bg);
-            margin-bottom: 10px;
+            margin: 10px;
             border-radius: 10px;
             transition: background 0.3s ease;
         }
@@ -298,9 +298,9 @@
         }
         
         .screenshot-card {
-            scroll-snap-align: start;
+            scroll-snap-align: center;
             flex: 0 0 auto;
-            width: 75%;
+            width: auto;
             border-radius: 12px;
             overflow: hidden;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
