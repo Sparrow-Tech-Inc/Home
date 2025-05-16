@@ -312,7 +312,7 @@
              width: 100%;
              height: auto;
              aspect-ratio: 9 / 16;
-             object-fit: cover;
+             object-fit: fill;
              display: block;
       }
         
