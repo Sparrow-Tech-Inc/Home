@@ -205,7 +205,7 @@
 
         /* Step Cards */
         .step-card {
-            background: var(--setp-card);
+            background: var(--step-card);
             padding: 1.50rem;
             border-radius: 12px;
             text-align: center;
