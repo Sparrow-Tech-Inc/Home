@@ -24,12 +24,12 @@
         }
 
         [data-bs-theme="dark"] {
-            --pastel-pink: #4a2a3a;
+            --pastel-pink: #DA7297;
             --pastel-blue: #2a3a4a;
-            --pastel-green: #2a4a3a;
+            --pastel-green: #88C273;
             --pastel-purple: #3a2a4a;
-            --pastel-yellow: #4a4a2a;
-            --pastel-orange: #4a3a2a;
+            --pastel-yellow: #C8AAAA;
+            --pastel-orange: #FFBF61;
             --primary: #9370db;
             --primary-dark: #7b5dc3;
             --secondary: #6a5acd;
