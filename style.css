@@ -468,6 +468,9 @@
             section {
                 padding: 3rem 0;
             }
+            .article-card {
+                 max-width: 280px;
+            }
             
         }
         
