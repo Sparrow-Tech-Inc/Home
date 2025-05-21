@@ -408,7 +408,7 @@
             }
             
             .hero-img {
-                max-height: 200px;
+                max-height: 180px;
                 margin-bottom: 2rem;
             }
         }
@@ -418,9 +418,6 @@
                 padding: 3rem 0;
             }
             
-            .screenshot-card {
-                width: 85%;
-            }
         }
         
         @media (max-width: 576px) {
@@ -433,9 +430,5 @@
                 font-size: 0.9rem;
             }
             
-            .screenshot-card {
-                width: auto;
-                aspect-ratio: 1 / 3;
-            }
         }
     
