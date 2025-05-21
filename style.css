@@ -14,6 +14,8 @@
             --gray: #6c757d;
             --success: #77dd77;
 
+            --footer: #212529;
+
             --list-item-bg: #f9e6ff;
             --list-item-hover-bg: #efccff;
 
@@ -31,7 +33,9 @@
             --primary-dark: #7b5dc3;
             --secondary: #6a5acd;
             --accent: #ff8c69;
-
+              
+            --footer: #6A6B9C ;
+              
             --list-item-bg: #6A6B9C;
             --list-item-hover-bg: #efccff;
               
@@ -105,6 +109,7 @@
             font-size: 1rem;
             background: var(--list-item-bg);
             margin: 6px auto;
+            width:90%;
             border-radius: 10px;
             transition: background 0.3s ease;
         }
@@ -340,13 +345,13 @@
 
 /********************** Footer *************************/
         footer {
-            background-color: var(--dark);
+            background-color: var(--footer);
             color: white;
             padding: 4rem 0 2rem;
         }
 
         [data-bs-theme="dark"] footer {
-            background-color: #1a1a1a;
+            background-color: var(--footer);
         }
         
         .social-icon {
