@@ -344,6 +344,39 @@
             border-color: rgba(106, 90, 205, 0.25);
         }
 
+/******************** Article Page ************************/
+
+.scrolling-wrapper {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+      padding-bottom: 1rem;
+      scroll-snap-type: x mandatory;
+    }
+
+    .scrolling-wrapper::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    .scrolling-wrapper::-webkit-scrollbar-thumb {
+      background-color: #ccc;
+      border-radius: 10px;
+    }
+
+    .article-card {
+      flex: 0 0 auto;
+      width: 100%;
+      max-width: 300px;
+      scroll-snap-align: start;
+      text-decoration: none;
+      color: inherit;
+    }
+    .article-card img {
+      object-fit: cover;
+      aspect-ratio: 3 / 2;
+    }
+
+
 /********************** Footer *************************/
         footer {
             background-color: var(--footer);
