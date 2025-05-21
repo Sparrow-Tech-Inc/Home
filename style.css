@@ -16,6 +16,8 @@
 
             --list-item-bg: #f9e6ff;
             --list-item-hover-bg: #efccff;
+
+            --step-card: #FFFFFF ;
         }
 
         [data-bs-theme="dark"] {
@@ -29,6 +31,11 @@
             --primary-dark: #7b5dc3;
             --secondary: #6a5acd;
             --accent: #ff8c69;
+
+            --list-item-bg: #6A6B9C;
+            --list-item-hover-bg: #efccff;
+              
+            --step-card: #9B7EBD ;
         }
    /****************************************************/
         html {
@@ -192,7 +199,7 @@
 
         /* Step Cards */
         .step-card {
-            background: white;
+            background: var(--setp-card);
             padding: 2rem;
             border-radius: 12px;
             text-align: center;
@@ -204,7 +211,7 @@
         }
 
         [data-bs-theme="dark"] .step-card {
-            background: #2a2a2a;
+            background: var(--step-card);
         }
 
         .step-card:nth-child(1) {
