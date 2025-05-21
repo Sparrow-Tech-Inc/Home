@@ -114,10 +114,9 @@
         }
         
         .hero-img {
-            max-height: 500px;
+            max-height: 300px;
             width: auto;
             border-radius: 16px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease;
         }
         
