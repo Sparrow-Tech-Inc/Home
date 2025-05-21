@@ -97,7 +97,7 @@
             padding: 15px;
             font-size: 1rem;
             background: var(--list-item-bg);
-            margin: 10px;
+            margin: 6px auto;
             border-radius: 10px;
             transition: background 0.3s ease;
         }
